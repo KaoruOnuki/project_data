@@ -1,11 +1,18 @@
-.row {
-  background-color: #000;
+ul {
+    list-style: none;
+}
 
-  .a {
-    background-color: #ddd;
-  }
+.b {
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+}
 
-  .b {
-    background-color: #777;
-  }
+.b li {
+  overflow: scroll;
+  flex-basis: calc( 100% / 8 ); /* 5列なので( 100% / 5 )となります */
+  padding: 1em;
+  background-color: #285890;
+  color: #fff;
+  font-weight: bold;
 }
