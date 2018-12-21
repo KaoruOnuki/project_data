@@ -3,27 +3,31 @@
 <div class="container">
   <h1>[ここMotto DATA]</h1>
 
-  <ul class="b">
-    <li>ドメイン名</li>
-    <li>法人名</li>
-    <li>都道府県</li>
-    <li>住所</li>
-    <li>電話</li>
-    <li>FAX</li>
-    <li>URL</li>
-    <li>法人番号</li>
-  </ul>
+  <div>
+    <ul class="b">
+      <li>NO</li>
+      <li>ドメイン名</li>
+      <li>法人名</li>
+      <li>都道府県</li>
+      <li>住所</li>
+      <li>電話</li>
+      <li>FAX</li>
+      <li>URL</li>
+      <li>法人番号</li>
+    </ul>
 
-  <% @all.each do |n| %>
-  <ul class="b">
-    <li><%= n.domain %></li>
-    <li><%= n.company_name %></li>
-    <li><%= n.state %></li>
-    <li><%= n.address %></li>
-    <li><%= n.phone %></li>
-    <li><%= n.fax %></li>
-    <li><%= n.url %></li>
-    <li><%= n.ein %></li>
-  </ul>
-  <% end %>
+    <% @all.each do |n| %>
+    <ul class="b">
+      <li><%= n.id %></li>
+      <li><%= n.domain %></li>
+      <li><%= n.company_name %></li>
+      <li><%= n.state %></li>
+      <li><%= n.address %></li>
+      <li><%= n.phone %></li>
+      <li><%= n.fax %></li>
+      <li><%= n.url %></li>
+      <li><%= n.ein %></li>
+    </ul>
+    <% end %>
+  </div>
 </div>
