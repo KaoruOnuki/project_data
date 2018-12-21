@@ -1,7 +1,0 @@
-{
-  "name": "project_data",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "4"
-  }
-}
